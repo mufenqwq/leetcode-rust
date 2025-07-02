@@ -1,18 +1,19 @@
 # 🦀 LeetCode Solutions in Rust
 
-这个项目记录我用 Rust 语言解决 LeetCode 问题的过程和代码。
+这个项目记录我用 Rust 语言解决 LeetCode 问题的过程和代码。每个解决方案都包含详细的注释、多种解法比较和完整的测试用例。
 
 ## 📁 项目结构
 
 ```
 leetcode-rust/
 ├── src/
-│   ├── main.rs           # 主入口文件
-│   └── solutions/        # 解决方案目录
-│       ├── mod.rs        # 模块定义和通用数据结构
-│       └── two_sum.rs    # Two Sum 问题解决方案
-├── Cargo.toml            # 项目配置
-└── README.md             # 项目说明
+│   ├── main.rs                    # 主入口文件
+│   └── solutions/                 # 解决方案目录
+│       ├── mod.rs                 # 模块定义和通用数据结构
+│       ├── two_sum.rs             # Two Sum 问题解决方案
+│       └── add_two_numbers.rs     # Add Two Numbers 问题解决方案
+├── Cargo.toml                     # 项目配置
+└── README.md                      # 项目说明
 ```
 
 ## 🚀 使用方法
@@ -34,9 +35,10 @@ cargo test two_sum
 
 ## 📝 已解决的问题
 
-| 问题编号 | 问题名称 | 难度 | 解法 | 时间复杂度 | 空间复杂度 |
-|---------|---------|------|------|-----------|-----------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 哈希表 | O(n) | O(n) |
+| 问题编号 | 问题名称 | 难度 | 解法 | 时间复杂度 | 空间复杂度 | 状态 |
+|---------|---------|------|------|-----------|-----------|------|
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 哈希表 | O(n) | O(n) | ✅ 已完成 |
+| 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | 链表遍历 | O(max(M,N)) | O(max(M,N)) | ✅ 已完成 |
 
 ## 🛠️ 添加新问题
 
@@ -85,11 +87,42 @@ mod tests {
 
 ## 📈 进度统计
 
-- **已解决**: 1 题
+- **已解决**: 2 题
 - **简单**: 1 题
-- **中等**: 0 题  
+- **中等**: 1 题  
 - **困难**: 0 题
+
+## 🛠️ 技术栈
+
+- **语言**: Rust
+- **测试框架**: Rust 内置测试
+- **序列化**: serde + serde_json
+- **性能测试**: criterion (开发依赖)
+
+## 🎯 项目特色
+
+- ✅ **详细注释**: 每个解决方案都有详细的中文注释
+- ✅ **多种解法**: 提供暴力解法和优化解法的对比
+- ✅ **完整测试**: 包含多个测试用例确保代码正确性
+- ✅ **性能分析**: 使用 criterion 进行性能基准测试
+- ✅ **代码规范**: 遵循 Rust 编码规范和最佳实践
+
+## 📚 参考资料
+
+- [Rust 官方文档](https://doc.rust-lang.org/)
+- [LeetCode 官网](https://leetcode.com/)
+- [Rust 算法与数据结构](https://github.com/TheAlgorithms/Rust)
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+## 📄 许可证
+
+MIT License
 
 ---
 
 Happy coding! 🦀
+
+*用 Rust 解决 LeetCode 问题，提升编程技能*

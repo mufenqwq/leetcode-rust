@@ -2,7 +2,7 @@
 // 包含所有 LeetCode 问题的解决方案
 
 pub mod two_sum;
-// pub mod add_two_numbers;
+pub mod add_two_numbers;
 // pub mod longest_substring;
 // 在这里添加更多问题的模块
 
