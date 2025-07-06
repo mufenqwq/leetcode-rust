@@ -15,4 +15,16 @@ fn main() {
         Some(result) => println!("Two Sum result for {:?} with target {}: {:?}", nums, target, result),
         None => println!("No solution found for Two Sum problem")
     }
+    
+    // 示例：运行 Longest Substring Without Repeating Characters 问题
+    let test_strings = vec![
+        "abcabcbb".to_string(),
+        "bbbbb".to_string(),
+        "pwwkew".to_string(),
+    ];
+    
+    for s in test_strings {
+        let result = solutions::longest_substring::Solution::length_of_longest_substring(s.clone());
+        println!("Longest substring length for '{}': {}", s, result);
+    }
 }

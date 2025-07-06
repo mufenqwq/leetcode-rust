@@ -3,7 +3,7 @@
 
 pub mod two_sum;
 pub mod add_two_numbers;
-// pub mod longest_substring;
+pub mod longest_substring;
 // 在这里添加更多问题的模块
 
 // 可以在这里添加一些通用的数据结构和工具函数
