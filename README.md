@@ -11,7 +11,9 @@ leetcode-rust/
 │   └── solutions/                 # 解决方案目录
 │       ├── mod.rs                 # 模块定义和通用数据结构
 │       ├── two_sum.rs             # Two Sum 问题解决方案
-│       └── add_two_numbers.rs     # Add Two Numbers 问题解决方案
+│       ├── add_two_numbers.rs     # Add Two Numbers 问题解决方案
+│       ├── longest_substring.rs   # Longest Substring Without Repeating Characters 问题解决方案
+│       └── kth_largest_element.rs # Kth Largest Element in an Array 问题解决方案
 ├── Cargo.toml                     # 项目配置
 └── README.md                      # 项目说明
 ```
@@ -39,6 +41,8 @@ cargo test two_sum
 |---------|---------|------|------|-----------|-----------|------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 哈希表 | O(n) | O(n) | ✅ 已完成 |
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | 链表遍历 | O(max(M,N)) | O(max(M,N)) | ✅ 已完成 |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | 滑动窗口 | O(n) | O(min(m,n)) | ✅ 已完成 |
+| 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | 快速选择 | O(n) 平均 | O(1) | ✅ 已完成 |
 
 ## 🛠️ 添加新问题
 
@@ -87,9 +91,9 @@ mod tests {
 
 ## 📈 进度统计
 
-- **已解决**: 2 题
+- **已解决**: 4 题
 - **简单**: 1 题
-- **中等**: 1 题  
+- **中等**: 3 题  
 - **困难**: 0 题
 
 ## 🛠️ 技术栈

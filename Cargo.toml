@@ -9,6 +9,7 @@ description = "LeetCode solutions implemented in Rust"
 # 常用的测试和调试工具
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
+rand = "0.8"
 
 [dev-dependencies]
 # 用于基准测试
